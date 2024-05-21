@@ -11,7 +11,6 @@ function App() {
     <GridItem area= "aside" bg={"gold"}>Aside</GridItem>
     </Show>
     <GridItem area= "main" bg={"dodgerblue"}> Main</GridItem>
-
   </Grid>
 }
 
