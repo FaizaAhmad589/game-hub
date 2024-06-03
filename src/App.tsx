@@ -7,12 +7,17 @@ function App() {
   return <Grid  templateAreas={{
     base : `"nav" "main"`,
     lg: `"nav nav" "aside main"` //for devices that are wider than 1024px
-  }}>
+  }}
+    templateColumns={{
+      base: "1fr",
+      lg: "200px 1fr"
+    }}
+  >
     <GridItem area= "nav" ><NavBar/></GridItem>
     <Show above="lg">
-    <GridItem area= "aside" ><GenreList/></GridItem>
+    <GridItem paddingX={5} area= "aside" ><GenreList/></GridItem>
     </Show>
-    <GridItem area= "main"> <GameGrid/></GridItem>
+    <GridItem area="main"> <GameGrid/></GridItem>
   </Grid>
 }
 
