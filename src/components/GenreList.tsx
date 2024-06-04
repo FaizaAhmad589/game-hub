@@ -22,7 +22,7 @@ const GenreList = ({onSelectGenre,selectedGenre}:Props) => {
               borderRadius={8}
               src={getCroppedImageUrl(genre.image_background)}
             />
-            <Button fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} onClick={()=> onSelectGenre(genre)} variant="link" fontSize="lg" >{genre.name}</Button>
+            <Button  fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} onClick={()=> onSelectGenre(genre)} variant="link" fontSize="lg" justifyContent={"flex-start"} >{genre.name}</Button>
           </HStack>
         </ListItem>
       ))}
